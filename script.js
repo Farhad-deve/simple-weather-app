@@ -93,21 +93,21 @@ function showInfos(data, forecast) {
         <div class="flex flex-col gap-[0.5rem]">
             <p class="flex items-center gap-[0.5rem]">
                 <span>
-                    <img src="/assets/icons/feels-like.svg" alt="">
+                    <img src="assets/icons/feels-like.svg" alt="">
                 </span>
                 <span id="feels-like">Feels like: ${data.main.feels_like} °C</span>
             </p>
 
             <p class="flex items-center gap-[0.5rem]">
                 <span>
-                    <img src="/assets/icons/humidity.svg" alt="">
+                    <img src="assets/icons/humidity.svg" alt="">
                 </span>
                 <span id="humidity">Humidity: ${data.main.humidity}%</span>
             </p>
 
             <p class="flex items-center gap-[0.5rem]">
                 <span>
-                    <img src="/assets/icons/wind.svg" alt="">
+                    <img src="assets/icons/wind.svg" alt="">
                 </span>
                 <span id="wind-speed">Wind: ${data.wind.speed} km/h</span>
             </p>
@@ -146,42 +146,42 @@ function showInfos(data, forecast) {
 function filterIcons(icon) {
     switch (icon) {
         case "01d":
-            return `/assets/icons/weather-icons/animated/day.svg`;
+            return `assets/icons/weather-icons/animated/day.svg`;
             break;
         case "01n":
-            return `/assets/icons/weather-icons/animated/night.svg`;
+            return `assets/icons/weather-icons/animated/night.svg`;
             break;
         case "02d":
         case "03d":
-            return `/assets/icons/weather-icons/animated/cloudy-day-1.svg`;
+            return `assets/icons/weather-icons/animated/cloudy-day-1.svg`;
             break;
         case "02n":
         case "03n":
-            return `/assets/icons/weather-icons/animated/cloudy-night-1.svg`;
+            return `assets/icons/weather-icons/animated/cloudy-night-1.svg`;
             break;
         case "04d":
         case "04n":
-            return `/assets/icons/weather-icons/animated/cloudy.svg`;
+            return `assets/icons/weather-icons/animated/cloudy.svg`;
             break;
         case "09d":
         case "09n":
-            return `/assets/icons/weather-icons/animated/rainy-6.svg`;
+            return `assets/icons/weather-icons/animated/rainy-6.svg`;
             break;
         case "10d":
         case "10n":
-            return `/assets/icons/weather-icons/animated/rainy-3.svg`;
+            return `assets/icons/weather-icons/animated/rainy-3.svg`;
             break;
         case "11d":
         case "11n":
-            return `/assets/icons/weather-icons/animated/thunder.svg`;
+            return `assets/icons/weather-icons/animated/thunder.svg`;
             break;
         case "13d":
         case "13n":
-            return `/assets/icons/weather-icons/animated/snowy-6.svg`;
+            return `assets/icons/weather-icons/animated/snowy-6.svg`;
             break;
         case "50d":
         case "50n":
-            return `/assets/icons/weather-icons/static/mist.png`;
+            return `assets/icons/weather-icons/static/mist.png`;
             break;
     }
 }
@@ -229,7 +229,7 @@ function updateBackground(data) {
         imageUrl = "night-sky-stars.jpg";
     }
 
-    mainContainer.style.backgroundImage = `url('/assets/images/${imageUrl}')`;
+    mainContainer.style.backgroundImage = `url('assets/images/${imageUrl}')`;
 }
 
 
