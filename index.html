@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- JS -->
+    <script type="module" src="script.js"></script>
+</head>
+
+<body class="bg-[url('/assets/images/fullpage-bg.png')] bg-no-repeat bg-cover min-h-screen flex items-center justify-center py-[3rem]">
+    
+    <main class="px-[clamp(1rem,2vw,3rem)] py-[clamp(1.5rem,2.5vw,3rem)] rounded-[2rem] flex flex-col gap-[1.5rem] w-[90%] md:w-[80%] lg:w-[70%]  bg-no-repeat bg-center bg-cover shadow-[0px_10px_25px_0px_rgba(0,0,0,0.25)]">
+        <section class="flex flex-col gap-[1rem] md:flex-row md:justify-between md:items-center">
+            <div>
+                <div id="city-country-time">
+                    
+                </div>
+            </div>
+
+            <div>
+                <form class="flex flex-col gap-[0.5rem] md:flex-row md:items-center">
+                    <input type="text" name="cityName" id="city" placeholder="Enter city name" class="bg-[#fff]/[0.3] text-[#fff] py-[0.5rem] px-[1rem] rounded-[12px] backdrop-blur-[12px] transition-all duration-200 hover:bg-[#fff]/[0.5] outline-3 outline-offset-2 outline-transparent focus:outline-[#fff]">
+                    <div class="flex items-center gap-[0.5rem] md:items-stretch">
+                        <button type="submit" class="bg-[#fff] rounded-[12px] px-[1.5rem] py-[0.5rem] text-[clamp(0.9rem,0.9vw,1.2rem)] w-full cursor-pointer transition-all duration-200 hover:bg-[#fff]/[0.8]">Search</button>
+                        <button type="button" class="bg-[#fff] p-[0.5rem] rounded-[12px] cursor-pointer md:p-[0.7rem] transition-all duration-200 hover:bg-[#fff]/[0.8]" id="get-weather-nukus">
+                            <img src="/assets/icons/location.svg" alt="" class="md:w-[2rem]">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-[1rem]">
+            <div class="flex flex-col gap-[1rem] md:flex-row md:justify-between md:items-center">
+                <div class="text-center flex flex-col items-center md:flex-row md:gap-[1rem] md:text-left" id="current-temp-and-description">    
+                </div>
+
+                <div class="flex flex-col items-center md:flex-row md:gap-[2rem]" id="icon-and-details">    
+                </div>
+            </div>
+
+            <div class="
+            grid bg-[#fff]/[0.3] rounded-[12px] backdrop-blur-[5px] p-[1rem] gap-[0.5rem]
+            grid-cols-1 md:grid-cols-2 lg:grid-cols-5
+            " id="forecast-container">
+                
+            </div>
+        </section>
+    </main>
+
+
+</body>
+</html>
